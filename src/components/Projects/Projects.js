@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import deardiary from "../../Assets/Projects/deardiary.png";
 import flextra from "../../Assets/Projects/flextra.png";
+import dragonai from "../../Assets/Projects/dragonai.png";
 import audiosensai from "../../Assets/Projects/audiosensai.png";
 
 function Projects() {
@@ -18,6 +19,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={dragonai}
+              isBlog={false}
+              title="Dragon AI"
+              description="Created a personal knowledge AI platform that helps users save information and answer questions based on their saved links. Aimed to create a serverless architecture using Supabase Cloud and an AI model from OpenAI."
+              ghLink="https://github.com/mlim-usfca/PersonalKnowledge"
+              demoLink="https://www.dragonai.live/"              
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={deardiary}
@@ -43,12 +56,11 @@ function Projects() {
               imgPath={flextra}
               isBlog={false}
               title="Flextra"
-              description="“Connect students to extra Community Garden produce.” Our problem is food waste and scarcity. Our solution is a platform that shows students the extra produce in a platform. This will be executed by making a website/app and finding a student employee."
+              description="Connect students to extra Community Garden produce.” Our problem is food waste and scarcity. Our solution is a platform that shows students the extra produce in a platform. This will be executed by making a website/app and finding a student employee."
               ghLink="https://docs.google.com/presentation/d/15BpmXhfg6psVKQ07C1ZyrBUupc458zQaa6yVfFSgPGQ/edit#slide=id.p"
               demoLink="https://previewer.adalo.com/29c3330b-3ee6-45fe-963c-4437936ae952"              
             />
           </Col>
-
         </Row>
       </Container>
     </Container>
